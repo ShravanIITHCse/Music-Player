@@ -303,7 +303,7 @@
 \end{abstract}
 
 
-\section*{Idea}
+\section*{Process}
 \begin{enumerate}
 	\item I used numpy module to randomise or shuffle the song
 	\item To make UI I have taken help of the online sources and I have customised it
@@ -317,6 +317,33 @@
 	\item Then converted the array back to list and returned that and thats my new songs list 
 \end{enumerate}
 
+\section*{Numpy.Random.Shuffle}
+	The np.random.shuffle function in NumPy is used to randomly permute or shuffle the elements of an array in place. In terms of probability, np.random.shuffle can be seen as a process that generates a random permutation of the elements in the array, where each possible permutation is equally likely.
+	
+	Let's consider an array with N elements. When you apply np.random.shuffle to this array, it randomly reorders the elements, creating a new permutation. The number of possible permutations of N elements is N!, which is the factorial of N. Each of these permutations has an equal probability of being generated.
+	
+	In our case we have 20 songs so we have 20! ways to permute the array of 20 songs each and each permutation will get a uniform probability of getting selected of $\frac{1}{20!}$\\
+	\vspace{10px}
+	
+\section*{Some snaps of My Music Player}
+	\begin{figure}[htbp]
+		\includegraphics[width=\linewidth]{images/normal.jpg}
+		\centering
+		\caption{This is how My music player looks normally}
+		\label{normal}
+	\end{figure}
+	\begin{figure}[htbp]
+		\includegraphics[width=\linewidth]{images/randomised_1.jpg}
+		\centering
+		\caption{After shuffling for once the list got shuffled}
+		\label{randomised_1}
+	\end{figure}
+	\begin{figure}[htbp]
+		\includegraphics[width=\linewidth]{images/randomised_2.jpg}
+		\centering
+		\caption{Another example of list shuffling}
+		\label{randomised_2}
+	\end{figure}
 
 
 
